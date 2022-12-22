@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import {Route, Routes} from "react-router-dom";
+import GetAQuote from "./pages/GetAQuote";
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home/>} />
                     <Route path="/about" element={<About/>} />
-
+                    <Route path="/getaquote" element={<GetAQuote/>} />
                 </Routes>
             </div>
 

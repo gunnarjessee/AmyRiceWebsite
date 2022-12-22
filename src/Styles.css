@@ -54,6 +54,7 @@ body {
     padding: .25rem;
 }
 
+
 .nav li.active {
     background-color: #0b486b;
 
@@ -63,6 +64,9 @@ body {
     background-color: #12658e;
 }
 
+.nav li.getaquote {
+    background-color: #24a3ee;
+}
 .content {
     margin: 2rem;
     display: flex;
@@ -75,13 +79,10 @@ body {
 
 }
 
-.center-content {
-    width: 50%;
-    margin-left: 2rem;
-}
 
 .right-content {
-    width: 25%;
+    width: 75%;
+    margin-left: 2rem;
 }
 
 .hero-title {

@@ -8,6 +8,14 @@ export default function NavBar() {
                 <ActiveLink to="/">Home</ActiveLink>
                 <ActiveLink to="/about">About</ActiveLink>
 
+                {
+                    // this will not have an active feature, at least not yet
+                }
+                <li className="getaquote">
+                    <Link to="/getaquote">
+                        Get a Quote
+                    </Link>
+                </li>
             </ul>
 
         </nav>
@@ -18,7 +26,7 @@ function ActiveLink({to, children, ...props}) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({path: resolvedPath.pathname, end: true} )
     return (
-        <li className={ isActive ? "active" : ""}>
+        <li className={ isActive ? "active"  : ""}>
             <Link to={to}>
                 {children}
             </Link>

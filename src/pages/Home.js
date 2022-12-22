@@ -11,12 +11,9 @@ export default function Home() {
             <div className="left-content">
                 <IconName></IconName>
             </div>
-            <div className="center-content">
+            <div className="right-content">
                 <h1 className="fade-in-text">Home</h1>
                 <p>{bodyText}</p>
-            </div>
-            <div className="right-content">
-
             </div>
         </div>
     );
